@@ -18,6 +18,8 @@ def printResults(data):
   # for each event, print the place where it occurred
 
 
+  
+
   # print the events that only have a magnitude greater than 4
 
       
