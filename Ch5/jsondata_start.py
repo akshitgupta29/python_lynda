@@ -14,14 +14,17 @@ def printResults(data):
   
   # output the number of events, plus the magnitude and each event name  
   count = theJSON["metadata"]["count"]
-  print (str(count) + "records received")
+  print (str(count) + " records received")
   # for each event, print the place where it occurred
-
+  for i in theJSON ["features"] :
+    print (i["properties"]["place"])
 
   
 
   # print the events that only have a magnitude greater than 4
-
+  for   i in theJSON ["features"]:
+    if i["properties"]["mag"] > 4:
+      print (str(i["properties"]["mag"]) + str("string")+ str(i["properties"]["place"]))
       
   # print only the events where at least 1 person reported feeling something
 
